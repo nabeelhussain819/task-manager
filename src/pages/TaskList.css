@@ -1,0 +1,193 @@
+.task-layout {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.task-header {
+  background: #001529;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: white !important;
+  margin: 0 !important;
+}
+
+.task-content {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-container {
+  background: transparent;
+}
+
+.task-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.task-title {
+  margin: 0 !important;
+  flex: 1;
+  word-break: break-word;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress-stats {
+  text-align: center;
+}
+
+.task-description {
+  display: block;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.checklist-section {
+  margin: 16px 0;
+}
+
+.checklist-item {
+  padding: 8px 0 !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.checklist-item:last-child {
+  border-bottom: none !important;
+}
+
+.checklist-item .ant-checkbox-wrapper {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.checklist-item .ant-checkbox {
+  margin-top: 4px;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-meta {
+  margin-top: 16px;
+}
+
+.checklist-inputs {
+  margin-bottom: 16px;
+}
+
+.checklist-input-item {
+  margin-bottom: 8px;
+}
+
+/* Empty state styling */
+.ant-empty {
+  padding: 60px 0;
+}
+
+.ant-empty-image {
+  height: 120px;
+}
+
+.ant-empty-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* List grid responsiveness */
+.ant-list-grid .ant-col {
+  padding: 8px;
+}
+
+/* Modal styling */
+.ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+.ant-modal-footer {
+  border-top: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .task-content {
+    padding: 16px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .task-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .progress-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-content {
+    padding: 12px;
+  }
+  
+  .task-header {
+    padding: 0 16px;
+  }
+  
+  .ant-list-grid .ant-col {
+    padding: 4px;
+  }
+}
